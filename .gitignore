@@ -1,6 +1,20 @@
-composer.phar
-/vendor/
+# Gradle and Kotlin compiler caches
+.gradle/
+.kotlin/
 
-# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# composer.lock
+# Build outputs (root project and every Gradle module)
+**/build/
+out/
+
+# Android native build intermediates
+**/.cxx/
+**/.externalNativeBuild/
+
+# IDE and local machine configuration
+.idea/
+.DS_Store
+local.properties
+
+# Signing material
+*.jks
+*.keystore
